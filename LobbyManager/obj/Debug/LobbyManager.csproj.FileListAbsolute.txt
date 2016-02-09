@@ -144,3 +144,6 @@ C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git
 C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.csprojResolveAssemblyReference.cache
 C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.dll
 C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\Resources.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\Resources.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\es\Resources.resources.dll

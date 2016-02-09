@@ -6,7 +6,7 @@ namespace LobbyManager.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
     }
 
@@ -29,11 +29,11 @@ namespace LobbyManager.Models
         public string Provider { get; set; }
 
         [Required]
-        [Display(Name = "Code")]
+        [Display(Name = "General_Code", ResourceType = typeof(Resources.Resources))]
         public string Code { get; set; }
         public string ReturnUrl { get; set; }
 
-        [Display(Name = "Remember this browser?")]
+        [Display(Name = "Login_RememberBrowser", ResourceType = typeof(Resources.Resources))]
         public bool RememberBrowser { get; set; }
 
         public bool RememberMe { get; set; }
@@ -42,23 +42,23 @@ namespace LobbyManager.Models
     public class ForgotViewModel
     {
         [Required]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
     }
 
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         [EmailAddress]
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "General_Password", ResourceType = typeof(Resources.Resources))]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Login_RememberMe", ResourceType = typeof(Resources.Resources))]
         public bool RememberMe { get; set; }
     }
 
@@ -66,18 +66,18 @@ namespace LobbyManager.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessageResourceName = "Error_Length", ErrorMessageResourceType = typeof(Resources.Resources), MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "General_Password", ResourceType = typeof(Resources.Resources))]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "General_ConfirmPassword", ResourceType = typeof(Resources.Resources))]
+        [Compare("Password", ErrorMessageResourceName = "Error_PasswordMatch", ErrorMessageResourceType = typeof(Resources.Resources))]
         public string ConfirmPassword { get; set; }
     }
 
@@ -85,18 +85,18 @@ namespace LobbyManager.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessageResourceName = "Error_Length", ErrorMessageResourceType = typeof(Resources.Resources), MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "General_Password", ResourceType = typeof(Resources.Resources))]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "General_ConfirmPassword", ResourceType = typeof(Resources.Resources))]
+        [Compare("Password", ErrorMessageResourceName = "Error_PasswordMatch", ErrorMessageResourceType = typeof(Resources.Resources))]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }
@@ -106,7 +106,7 @@ namespace LobbyManager.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
     }
 }

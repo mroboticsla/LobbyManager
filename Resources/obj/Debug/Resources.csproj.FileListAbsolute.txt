@@ -1,0 +1,10 @@
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\bin\Debug\Resources.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\bin\Debug\Resources.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\Resources\obj\Debug\Resources.Resources.resources
