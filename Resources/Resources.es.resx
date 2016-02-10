@@ -141,6 +141,12 @@
   <data name="Account_LockedOutMessage" xml:space="preserve">
     <value>Ésta cuenta ha sido bloqueada, por favor intente de nuevo más tarde.</value>
   </data>
+  <data name="Account_Logoff" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="Account_Register" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
   <data name="Account_SubjectResendConfirmation" xml:space="preserve">
     <value>Confirmación de nueva cuenta LobbyManager®</value>
   </data>

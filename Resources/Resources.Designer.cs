@@ -133,6 +133,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Log off.
+        /// </summary>
+        public static string Account_Logoff {
+            get {
+                return ResourceManager.GetString("Account_Logoff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string Account_Register {
+            get {
+                return ResourceManager.GetString("Account_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm your LobbyManager® account-Resend.
         /// </summary>
         public static string Account_SubjectResendConfirmation {

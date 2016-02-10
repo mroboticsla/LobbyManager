@@ -141,6 +141,12 @@
   <data name="Account_LockedOutMessage" xml:space="preserve">
     <value>This account has been locked out, please try again later.</value>
   </data>
+  <data name="Account_Logoff" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="Account_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
   <data name="Account_SubjectResendConfirmation" xml:space="preserve">
     <value>Confirm your LobbyManager® account-Resend</value>
   </data>
