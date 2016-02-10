@@ -144,6 +144,9 @@
   <data name="Account_Logoff" xml:space="preserve">
     <value>Cerrar sesión</value>
   </data>
+  <data name="Account_NoAuthenticationServicesMessage" xml:space="preserve">
+    <value>No tiene servicios de autenticación externos. Vea &lt;a href="http://go.microsoft.com/fwlink/?LinkId=403804"&gt;éste artículo&lt;/a&gt; para más detalles acerca de la conexión de proveedores de autenticación externos para ASP.NET.</value>
+  </data>
   <data name="Account_Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="Account_TokenReSent" xml:space="preserve">
     <value>El token de confirmación ha sido enviado a su correo</value>
+  </data>
+  <data name="Account_UseAnotherServiceLogin" xml:space="preserve">
+    <value>Usar otro servicio para Inicio de Sesión</value>
   </data>
   <data name="Error_Length" xml:space="preserve">
     <value>La {0} debe contener al menos {2} caracteres de longitud.</value>
@@ -208,6 +214,9 @@
   </data>
   <data name="General_VendorName" xml:space="preserve">
     <value>M-Robotics Latin America</value>
+  </data>
+  <data name="General_WelcomeLabel" xml:space="preserve">
+    <value>Hola</value>
   </data>
   <data name="Login_ChooseYourLanguage" xml:space="preserve">
     <value>Seleccionar lenguaje</value>

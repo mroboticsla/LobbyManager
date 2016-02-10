@@ -144,6 +144,9 @@
   <data name="Account_Logoff" xml:space="preserve">
     <value>Log off</value>
   </data>
+  <data name="Account_NoAuthenticationServicesMessage" xml:space="preserve">
+    <value>There are no external authentication services configured. See &lt;a href="http://go.microsoft.com/fwlink/?LinkId=403804"&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services.</value>
+  </data>
   <data name="Account_Register" xml:space="preserve">
     <value>Register</value>
   </data>
@@ -158,6 +161,9 @@
   </data>
   <data name="Account_TokenReSent" xml:space="preserve">
     <value>The confirmation token has been resent to your email account</value>
+  </data>
+  <data name="Account_UseAnotherServiceLogin" xml:space="preserve">
+    <value>Use another service to log in.</value>
   </data>
   <data name="Error_Length" xml:space="preserve">
     <value>The {0} must be at least {2} characters long.</value>
@@ -208,6 +214,9 @@
   </data>
   <data name="General_VendorName" xml:space="preserve">
     <value>M-Robotics Latin America</value>
+  </data>
+  <data name="General_WelcomeLabel" xml:space="preserve">
+    <value>Hello</value>
   </data>
   <data name="Login_ChooseYourLanguage" xml:space="preserve">
     <value>Choose your language</value>

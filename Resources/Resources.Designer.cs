@@ -142,6 +142,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There are no external authentication services configured. See &lt;a href=&quot;http://go.microsoft.com/fwlink/?LinkId=403804&quot;&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services..
+        /// </summary>
+        public static string Account_NoAuthenticationServicesMessage {
+            get {
+                return ResourceManager.GetString("Account_NoAuthenticationServicesMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Register.
         /// </summary>
         public static string Account_Register {
@@ -183,6 +192,15 @@ namespace Resources {
         public static string Account_TokenReSent {
             get {
                 return ResourceManager.GetString("Account_TokenReSent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use another service to log in..
+        /// </summary>
+        public static string Account_UseAnotherServiceLogin {
+            get {
+                return ResourceManager.GetString("Account_UseAnotherServiceLogin", resourceCulture);
             }
         }
         
@@ -296,6 +314,15 @@ namespace Resources {
         public static string General_VendorName {
             get {
                 return ResourceManager.GetString("General_VendorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hello.
+        /// </summary>
+        public static string General_WelcomeLabel {
+            get {
+                return ResourceManager.GetString("General_WelcomeLabel", resourceCulture);
             }
         }
         
