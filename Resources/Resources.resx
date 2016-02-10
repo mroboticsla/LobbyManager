@@ -135,6 +135,12 @@
   <data name="Account_InvalidLoginAttempt" xml:space="preserve">
     <value>Invalid login attempt</value>
   </data>
+  <data name="Account_LockedOut" xml:space="preserve">
+    <value>Locked Out</value>
+  </data>
+  <data name="Account_LockedOutMessage" xml:space="preserve">
+    <value>This account has been locked out, please try again later.</value>
+  </data>
   <data name="Account_SubjectResendConfirmation" xml:space="preserve">
     <value>Confirm your LobbyManager® account-Resend</value>
   </data>
@@ -181,6 +187,15 @@
 &lt;/table&gt;
 &lt;p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 10.5pt; background: white;"&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;</value>
+  </data>
+  <data name="General_ErrorMessage" xml:space="preserve">
+    <value>An error occurred while processing your request.</value>
+  </data>
+  <data name="General_ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="General_Info" xml:space="preserve">
+    <value>Info.</value>
   </data>
   <data name="General_Password" xml:space="preserve">
     <value>Password</value>
