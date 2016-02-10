@@ -120,14 +120,29 @@
   <data name="Account_CheckEmailBeforeLogin" xml:space="preserve">
     <value>Revise su correo y verifique su cuenta antes de ingresar al sistema.</value>
   </data>
+  <data name="Account_CheckEmailToResetPassword" xml:space="preserve">
+    <value>Por favor, revise su bandeja de entrada y siga las instrucciones para recuperar el acceso a su cuenta.</value>
+  </data>
+  <data name="Account_ClickHereToLogin" xml:space="preserve">
+    <value>Haga click aquí para iniciar sesión</value>
+  </data>
   <data name="Account_ConfirmedEmailBeforeLogon" xml:space="preserve">
     <value>Debe verificar su correo electrónico antes de continuar</value>
+  </data>
+  <data name="Account_ConfirmEmail" xml:space="preserve">
+    <value>Confirmación de Correo Electrónico</value>
   </data>
   <data name="Account_EmailConfirmAccount" xml:space="preserve">
     <value>Puede verificar su cuenta de LobbyManager® haciendo click &lt;a href="{0}"&gt;aquí.&lt;/a&gt;{1}</value>
   </data>
   <data name="Account_EmailResetPassword" xml:space="preserve">
     <value>Puede restaurar  su contraseña de LobbyManager® haciendo click &lt;a href="{0}"&gt;aquí.&lt;/a&gt;{1}</value>
+  </data>
+  <data name="Account_EnterEmail" xml:space="preserve">
+    <value>Ingrese su correo electrónico</value>
+  </data>
+  <data name="Account_ForgotPasswordConfirmation" xml:space="preserve">
+    <value>Confirmación de recuperación de contraseña</value>
   </data>
   <data name="Account_InvalidCode" xml:space="preserve">
     <value>Código incorrecto</value>
@@ -141,6 +156,12 @@
   <data name="Account_LockedOutMessage" xml:space="preserve">
     <value>Ésta cuenta ha sido bloqueada, por favor intente de nuevo más tarde.</value>
   </data>
+  <data name="Account_LoginFailure" xml:space="preserve">
+    <value>Hubo un problema al iniciar sesión</value>
+  </data>
+  <data name="Account_LoginFailureMessage" xml:space="preserve">
+    <value>No se puede iniciar sesión con el servicio seleccionado.</value>
+  </data>
   <data name="Account_Logoff" xml:space="preserve">
     <value>Cerrar sesión</value>
   </data>
@@ -149,6 +170,30 @@
   </data>
   <data name="Account_Register" xml:space="preserve">
     <value>Registrarse</value>
+  </data>
+  <data name="Account_ResetPassword" xml:space="preserve">
+    <value>Restablecer la contraseña</value>
+  </data>
+  <data name="Account_ResetPasswordButton" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="Account_ResetPasswordConfirmation" xml:space="preserve">
+    <value>Solicitud para Restablecer Contraseña</value>
+  </data>
+  <data name="Account_ResetYourPassword" xml:space="preserve">
+    <value>Restablecer su contraseña</value>
+  </data>
+  <data name="Account_SelectTwoFactorAuthProvider" xml:space="preserve">
+    <value>Seleccione su proveedor de autenticación:</value>
+  </data>
+  <data name="Account_Send" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Account_SendEmailLink" xml:space="preserve">
+    <value>Enviar vínculo</value>
+  </data>
+  <data name="Account_SendVerificationCode" xml:space="preserve">
+    <value>Enviar código de verificación</value>
   </data>
   <data name="Account_SubjectResendConfirmation" xml:space="preserve">
     <value>Confirmación de nueva cuenta LobbyManager®</value>
@@ -159,11 +204,20 @@
   <data name="Account_SubjectSendConfirmation" xml:space="preserve">
     <value>Confirmación de nueva cuenta LobbyManager®</value>
   </data>
+  <data name="Account_SuccessfullAuthMessage" xml:space="preserve">
+    <value>Se autenticó exitosamente su cuenta usando &lt;strong&gt;{0}&lt;/strong&gt;. Por favor ingrese un nombre de usuario y haga click en el botón '{1}' para finalizar.</value>
+  </data>
+  <data name="Account_ThankYouForConfirmEmail" xml:space="preserve">
+    <value>Gracias por confirmar su correo electrónico</value>
+  </data>
   <data name="Account_TokenReSent" xml:space="preserve">
     <value>El token de confirmación ha sido enviado a su correo</value>
   </data>
   <data name="Account_UseAnotherServiceLogin" xml:space="preserve">
     <value>Usar otro servicio para Inicio de Sesión</value>
+  </data>
+  <data name="Account_YourPasswordHasBeenReset" xml:space="preserve">
+    <value>Se ha restablecido su contraseña</value>
   </data>
   <data name="Error_Length" xml:space="preserve">
     <value>La {0} debe contener al menos {2} caracteres de longitud.</value>
@@ -211,6 +265,9 @@
   </data>
   <data name="General_Password" xml:space="preserve">
     <value>Contraseña</value>
+  </data>
+  <data name="General_Submit" xml:space="preserve">
+    <value>Enviar</value>
   </data>
   <data name="General_VendorName" xml:space="preserve">
     <value>M-Robotics Latin America</value>

@@ -120,14 +120,32 @@
   <data name="Account_CheckEmailBeforeLogin" xml:space="preserve">
     <value>Check your email and confirm your account, you must be confirmed before you can log in.</value>
   </data>
+  <data name="Account_CheckEmailToResetPassword" xml:space="preserve">
+    <value>Please check your email to reset your password.</value>
+  </data>
+  <data name="Account_ClickHereToLogin" xml:space="preserve">
+    <value>Please Click here to Log in</value>
+  </data>
   <data name="Account_ConfirmedEmailBeforeLogon" xml:space="preserve">
     <value>You must have a confirmed email to log on</value>
+  </data>
+  <data name="Account_ConfirmEmail" xml:space="preserve">
+    <value>Confirm Email</value>
   </data>
   <data name="Account_EmailConfirmAccount" xml:space="preserve">
     <value>Please confirm your LobbyManager® account by clicking &lt;a href="{0}"&gt;here&lt;/a&gt;{1}</value>
   </data>
   <data name="Account_EmailResetPassword" xml:space="preserve">
     <value>Please reset your LobbyManager® password by clicking &lt;a href="{0}"&gt;here&lt;/a&gt;{1}</value>
+  </data>
+  <data name="Account_EnterEmail" xml:space="preserve">
+    <value>Enter your e-mail</value>
+  </data>
+  <data name="Account_EnterVerificationCode" xml:space="preserve">
+    <value>Enter verification code</value>
+  </data>
+  <data name="Account_ForgotPasswordConfirmation" xml:space="preserve">
+    <value>Forgot Password Confirmation</value>
   </data>
   <data name="Account_InvalidCode" xml:space="preserve">
     <value>Invalid code</value>
@@ -141,6 +159,12 @@
   <data name="Account_LockedOutMessage" xml:space="preserve">
     <value>This account has been locked out, please try again later.</value>
   </data>
+  <data name="Account_LoginFailure" xml:space="preserve">
+    <value>Login Failure</value>
+  </data>
+  <data name="Account_LoginFailureMessage" xml:space="preserve">
+    <value>Unsuccessful login with service.</value>
+  </data>
   <data name="Account_Logoff" xml:space="preserve">
     <value>Log off</value>
   </data>
@@ -149,6 +173,30 @@
   </data>
   <data name="Account_Register" xml:space="preserve">
     <value>Register</value>
+  </data>
+  <data name="Account_ResetPassword" xml:space="preserve">
+    <value>Reset password</value>
+  </data>
+  <data name="Account_ResetPasswordButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Account_ResetPasswordConfirmation" xml:space="preserve">
+    <value>Reset password confirmation</value>
+  </data>
+  <data name="Account_ResetYourPassword" xml:space="preserve">
+    <value>Reset your password</value>
+  </data>
+  <data name="Account_SelectTwoFactorAuthProvider" xml:space="preserve">
+    <value>Select Two-Factor Authentication Provider:</value>
+  </data>
+  <data name="Account_Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Account_SendEmailLink" xml:space="preserve">
+    <value>Email Link</value>
+  </data>
+  <data name="Account_SendVerificationCode" xml:space="preserve">
+    <value>Send verification code</value>
   </data>
   <data name="Account_SubjectResendConfirmation" xml:space="preserve">
     <value>Confirm your LobbyManager® account-Resend</value>
@@ -159,11 +207,23 @@
   <data name="Account_SubjectSendConfirmation" xml:space="preserve">
     <value>Confirm your LobbyManager® account</value>
   </data>
+  <data name="Account_SuccessfullAuthMessage" xml:space="preserve">
+    <value>You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;. Please enter a user name for this site below and click the '{1}' button to finish logging in.</value>
+  </data>
+  <data name="Account_ThankYouForConfirmEmail" xml:space="preserve">
+    <value>Thank you for confirming your email</value>
+  </data>
   <data name="Account_TokenReSent" xml:space="preserve">
     <value>The confirmation token has been resent to your email account</value>
   </data>
   <data name="Account_UseAnotherServiceLogin" xml:space="preserve">
     <value>Use another service to log in.</value>
+  </data>
+  <data name="Account_Verify" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="Account_YourPasswordHasBeenReset" xml:space="preserve">
+    <value>Your password has been reset</value>
   </data>
   <data name="Error_Length" xml:space="preserve">
     <value>The {0} must be at least {2} characters long.</value>
@@ -211,6 +271,9 @@
   </data>
   <data name="General_Password" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="General_Submit" xml:space="preserve">
+    <value>Submit</value>
   </data>
   <data name="General_VendorName" xml:space="preserve">
     <value>M-Robotics Latin America</value>
