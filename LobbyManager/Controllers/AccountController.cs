@@ -80,10 +80,10 @@ namespace LobbyManager.Controllers
             {
                 if (!await UserManager.IsEmailConfirmedAsync(user.Id))
                 {
-                    string callbackUrl = await SendEmailConfirmationTokenAsync(user.Id, "Confirm your LobbyManager® account-Resend");
+                    string callbackUrl = await SendEmailConfirmationTokenAsync(user.Id, Resources.Resources.Account_SubjectResendConfirmation);
 
-                    ViewBag.errorMessage = "You must have a confirmed email to log on. "
-                              + "The confirmation token has been resent to your email account.";
+                    ViewBag.errorMessage = Resources.Resources.Account_ConfirmedEmailBeforeLogon + ". "
+                              + Resources.Resources.Account_TokenReSent + ".";
                     return View("Error");
                 }
             }
@@ -101,7 +101,7 @@ namespace LobbyManager.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    ModelState.AddModelError("", Resources.Resources.Account_InvalidLoginAttempt + ".");
                     return View(model);
             }
         }
@@ -155,7 +155,7 @@ namespace LobbyManager.Controllers
                     return View("Lockout");
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid code.");
+                    ModelState.AddModelError("", Resources.Resources.Account_InvalidCode + ".");
                     return View(model);
             }
         }
@@ -193,13 +193,12 @@ namespace LobbyManager.Controllers
                        + callbackUrl + "\">here</a><br/><br/>M-Robotics Latin America");
                     */
                     //Using Helper Function
-                    string callbackUrl = await SendEmailConfirmationTokenAsync(user.Id, "Confirm your LobbyManager® account");
+                    string callbackUrl = await SendEmailConfirmationTokenAsync(user.Id, Resources.Resources.Account_SubjectSendConfirmation);
 
                     // Uncomment to debug locally 
                     // TempData["ViewBagLink"] = callbackUrl;
 
-                    ViewBag.Message = "Check your email and confirm your account, you must be confirmed "
-                                    + "before you can log in.";
+                    ViewBag.Message = Resources.Resources.Account_CheckEmailBeforeLogin;
 
                     return View("Info");
                     //return RedirectToAction("Index", "Home");
@@ -250,7 +249,7 @@ namespace LobbyManager.Controllers
 
                 string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                await UserManager.SendEmailAsync(user.Id, "LobbyManager® Reset Password", "Please reset your LobbyManager® password by clicking <a href=\"" + callbackUrl + "\">here</a><br/><br/>M-Robotics Latin America");
+                await UserManager.SendEmailAsync(user.Id, Resources.Resources.Account_SubjectResetPassword, String.Format(Resources.Resources.Account_EmailResetPassword, callbackUrl, Resources.Resources.General_EmailSignature));
                 return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 
@@ -524,8 +523,7 @@ namespace LobbyManager.Controllers
             var callbackUrl = Url.Action("ConfirmEmail", "Account",
                new { userId = userID, code = code }, protocol: Request.Url.Scheme);
             await UserManager.SendEmailAsync(userID, subject,
-               "Please confirm your LobbyManager® account by clicking <a href=\""
-                       + callbackUrl + "\">here</a><br/><br/>M-Robotics Latin America");
+               String.Format(Resources.Resources.Account_EmailConfirmAccount, callbackUrl, Resources.Resources.General_EmailSignature));
 
             return callbackUrl;
         }

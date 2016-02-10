@@ -117,6 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Account_CheckEmailBeforeLogin" xml:space="preserve">
+    <value>Revise su correo y verifique su cuenta antes de ingresar al sistema.</value>
+  </data>
+  <data name="Account_ConfirmedEmailBeforeLogon" xml:space="preserve">
+    <value>Debe verificar su correo electrónico antes de continuar</value>
+  </data>
+  <data name="Account_EmailConfirmAccount" xml:space="preserve">
+    <value>Puede verificar su cuenta de LobbyManager® haciendo click &lt;a href="{0}"&gt;aquí.&lt;/a&gt;{1}</value>
+  </data>
+  <data name="Account_EmailResetPassword" xml:space="preserve">
+    <value>Puede restaurar  su contraseña de LobbyManager® haciendo click &lt;a href="{0}"&gt;aquí.&lt;/a&gt;{1}</value>
+  </data>
+  <data name="Account_InvalidCode" xml:space="preserve">
+    <value>Código incorrecto</value>
+  </data>
+  <data name="Account_InvalidLoginAttempt" xml:space="preserve">
+    <value>Credenciales incorrectas</value>
+  </data>
+  <data name="Account_SubjectResendConfirmation" xml:space="preserve">
+    <value>Confirmación de nueva cuenta LobbyManager®</value>
+  </data>
+  <data name="Account_SubjectResetPassword" xml:space="preserve">
+    <value>Recuperación de Contraseña LobbyManager®</value>
+  </data>
+  <data name="Account_SubjectSendConfirmation" xml:space="preserve">
+    <value>Confirmación de nueva cuenta LobbyManager®</value>
+  </data>
+  <data name="Account_TokenReSent" xml:space="preserve">
+    <value>El token de confirmación ha sido enviado a su correo</value>
+  </data>
   <data name="Error_Length" xml:space="preserve">
     <value>La {0} debe contener al menos {2} caracteres de longitud.</value>
   </data>
@@ -135,17 +165,46 @@
   <data name="General_Email" xml:space="preserve">
     <value>Correo</value>
   </data>
+  <data name="General_EmailSignature" xml:space="preserve">
+    <value>&lt;p&gt;&amp;nbsp;Atentamente,&lt;/p&gt;
+&lt;div class="WordSection1"&gt;
+&lt;table class="MsoTableGrid" style="border-collapse: collapse; border: none; height: 116px;" border="0" width="557" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes; height: 87.05pt;"&gt;
+&lt;td style="width: 153.3pt; border: none; border-right: solid windowtext 1.0pt; mso-border-right-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 87.05pt;" valign="top" width="204"&gt;&lt;img src="http://mroboticsla.com/logo.png" alt="" width="207" height="69" /&gt;&lt;/td&gt;
+&lt;td style="width: 278.5pt; border: none; mso-border-left-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 87.05pt;" valign="top" width="371"&gt;
+&lt;p class="MsoNormal" style="margin-bottom: 7.5pt; line-height: 10.5pt; background: white;"&gt;&lt;strong&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;El Equipo de&amp;nbsp;M-Robotics Latin America&lt;/span&gt;&lt;/strong&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;&lt;br /&gt;&lt;a href="mailto:developers@mroboticsla.com"&gt;&lt;span style="color: #428bca; text-decoration: none; text-underline: none;"&gt;developers@mroboticsla.com&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 10.5pt; background: white;"&gt;&lt;strong&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;Visita nuestra p&amp;aacute;gina web.&lt;/span&gt;&lt;/strong&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;&lt;br /&gt; &lt;a href="http://signature-maker.net/www.mroboticsla.com"&gt;&lt;span style="color: #428bca; text-decoration: none; text-underline: none;"&gt;www.mroboticsla.com&lt;/span&gt;&lt;/a&gt;&amp;nbsp;&lt;br /&gt; &lt;/span&gt;&lt;span style="font-size: 7.5pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;3a Calle Poniente, #5261, Lomas Verdes Col. Escal&amp;oacute;n, Espacios Centro de Negocios, San salvador, El Salvador&lt;/span&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 10.5pt; background: white;"&gt;&lt;span style="font-size: 9.0pt; font-family: 'Helvetica','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #333333; mso-fareast-language: ES-SV;"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</value>
+  </data>
   <data name="General_Password" xml:space="preserve">
     <value>Contraseña</value>
+  </data>
+  <data name="General_VendorName" xml:space="preserve">
+    <value>M-Robotics Latin America</value>
   </data>
   <data name="Login_ChooseYourLanguage" xml:space="preserve">
     <value>Seleccionar lenguaje</value>
   </data>
+  <data name="Login_ForgotPassword" xml:space="preserve">
+    <value>¿Olvidó su contraseña?</value>
+  </data>
+  <data name="Login_LoginButton" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="Login_RegisterNewUser" xml:space="preserve">
+    <value>Crear una nueva cuenta</value>
+  </data>
   <data name="Login_RememberBrowser" xml:space="preserve">
-    <value>Recordar en éste equipo?</value>
+    <value>¿Recordar en éste equipo?</value>
   </data>
   <data name="Login_RememberMe" xml:space="preserve">
-    <value>Mantener sesión abierta?</value>
+    <value>¿Mantener sesión abierta?</value>
   </data>
   <data name="Login_Title" xml:space="preserve">
     <value>Iniciar Sesión</value>
@@ -161,5 +220,14 @@
   </data>
   <data name="MainMenu_Home" xml:space="preserve">
     <value>Principal</value>
+  </data>
+  <data name="Register_CreateNewAccount" xml:space="preserve">
+    <value>Crear una nueva cuenta</value>
+  </data>
+  <data name="Register_RegisterButton" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="Register_Title" xml:space="preserve">
+    <value>Registrar</value>
   </data>
 </root>
