@@ -16,6 +16,7 @@ using SendGrid;
 using System.Net;
 using System.Configuration;
 using System.Diagnostics;
+using Twilio;
 
 namespace LobbyManager
 {
@@ -31,18 +32,10 @@ namespace LobbyManager
             var myMessage = new SendGridMessage();
             myMessage.AddTo(message.Destination);
             myMessage.From = new System.Net.Mail.MailAddress(
-                                "admin@mroboticsla.com", "M-Robotics Latin America");
+                                "admin@mroboticsla.com", Resources.Resources.General_VendorName);
             myMessage.Subject = message.Subject;
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
-            /*
-            var credentials = new NetworkCredential(
-                       ConfigurationManager.AppSettings["mailAccount"],
-                       ConfigurationManager.AppSettings["mailPassword"]
-                       );
-            */
-            // Create a Web transport for sending email.
-            // var transportWeb = new Web(credentials);
 
             var transportWeb = new Web(ConfigurationManager.AppSettings["MRoboticsAPI"]);
 
@@ -64,7 +57,22 @@ namespace LobbyManager
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your SMS service here to send a text message.
-            return Task.FromResult(0);
+            //return Task.FromResult(0);
+
+            // Twilio Begin
+             var Twilio = new TwilioRestClient(
+               System.Configuration.ConfigurationManager.AppSettings["SMSAccountIdentification"],
+               System.Configuration.ConfigurationManager.AppSettings["SMSAccountPassword"]);
+             var result = Twilio.SendMessage(
+               System.Configuration.ConfigurationManager.AppSettings["SMSAccountFrom"],
+               message.Destination, message.Body
+             );
+
+             //Status is one of Queued, Sending, Sent, Failed or null if the number is not valid
+             //Trace.TraceInformation(result.Status);
+             //Twilio doesn't currently have an async API, so return success.
+             return Task.FromResult(0);
+            // Twilio End
         }
     }
 

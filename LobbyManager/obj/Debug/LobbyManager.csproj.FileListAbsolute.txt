@@ -223,3 +223,8 @@ C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\Lobb
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.csprojResolveAssemblyReference.cache
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.dll
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\RestSharp.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\Twilio.Api.dll
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\RestSharp.xml
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\Twilio.Api.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\bin\Twilio.Api.xml
