@@ -3,7 +3,7 @@
     ViewBag.Title = @Resources.General_Manage;
 }
 
-<h2>@ViewBag.Title.</h2>
+<h2>@ViewBag.Title</h2>
 
 <p class="text-success">@ViewBag.StatusMessage</p>
 <div>
@@ -15,23 +15,23 @@
             [
             @if (Model.HasPassword)
             {
-                @Html.ActionLink("Change your password", "ChangePassword")
+                @Html.ActionLink(Resources.Manage_ChangeYourPassword, "ChangePassword")
             }
             else
             {
-                @Html.ActionLink("Create", "SetPassword")
+                @Html.ActionLink(Resources.General_Create, "SetPassword")
             }
             ]
         </dd>
         <dt>@Resources.Manage_ExternalLogins:</dt>
         <dd>
             @Model.Logins.Count [
-            @Html.ActionLink("Manage", "ManageLogins") ]
+            @Html.ActionLink(Resources.General_Manage, "ManageLogins") ]
         </dd>
 
         <dt>@Resources.Manage_PhoneNumber:</dt>
         <dd>
-            @(Model.PhoneNumber ?? "None") [
+            @(Model.PhoneNumber ?? Resources.General_None) [
             @if (Model.PhoneNumber != null)
             {
                 @Html.ActionLink(Resources.General_Change, "AddPhoneNumber")
@@ -52,7 +52,7 @@
                 using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 {
                     @Html.AntiForgeryToken()
-                    <text>Enabled
+                    <text>@Resources.General_Enable
                         <input type="submit" value="@Resources.General_Disable" class="btn btn-link" />
                     </text>
                 }
@@ -62,7 +62,7 @@
                 using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 {
                     @Html.AntiForgeryToken()
-                    <text>Disabled
+                    <text>@Resources.General_Disable
                         <input type="submit" value="@Resources.General_Enable" class="btn btn-link" />
                     </text>
                 }

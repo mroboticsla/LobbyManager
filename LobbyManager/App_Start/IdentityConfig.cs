@@ -153,7 +153,7 @@ namespace LobbyManager
             {
                 MessageFormat = Resources.Resources.Manage_YourPhoneSecurityCodeIs
             });
-            manager.RegisterTwoFactorProvider(Resources.Resources.Manage_YourEmailSecurityCodeIs, new EmailTokenProvider<ApplicationUser>
+            manager.RegisterTwoFactorProvider(Resources.Resources.Manage_EmailCode, new EmailTokenProvider<ApplicationUser>
             {
                 Subject = Resources.Resources.Manage_SecurityCodeEmailSubject,
                 BodyFormat = Resources.Resources.Manage_YourEmailSecurityCodeIs + Resources.Resources.General_EmailSignature

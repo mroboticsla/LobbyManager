@@ -55,12 +55,12 @@ namespace LobbyManager.Controllers
         public async Task<ActionResult> Index(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
-                : message == ManageMessageId.Error ? "An error has occurred."
-                : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
-                : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+                message == ManageMessageId.ChangePasswordSuccess ? Resources.Resources.Manage_YourPasswordHasBeenChanged
+                : message == ManageMessageId.SetPasswordSuccess ? Resources.Resources.Manage_YourPasswordHasBeenSet
+                : message == ManageMessageId.SetTwoFactorSuccess ? Resources.Resources.Manage_TwoFactorProviderSet
+                : message == ManageMessageId.Error ? Resources.Resources.General_ErrorMessage
+                : message == ManageMessageId.AddPhoneSuccess ? Resources.Resources.Manage_PhoneNumberAdded
+                : message == ManageMessageId.RemovePhoneSuccess ? Resources.Resources.Manage_PhoneNumberRemoved
                 : "";
 
             var userId = User.Identity.GetUserId();
@@ -190,7 +190,7 @@ namespace LobbyManager.Controllers
                 return RedirectToAction("Index", new { Message = ManageMessageId.AddPhoneSuccess });
             }
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "Failed to verify phone");
+            ModelState.AddModelError("", Resources.Resources.Manage_FailedToVerifyPhone);
             return View(model);
         }
 
@@ -279,8 +279,8 @@ namespace LobbyManager.Controllers
         public async Task<ActionResult> ManageLogins(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-                : message == ManageMessageId.Error ? "An error has occurred."
+                message == ManageMessageId.RemoveLoginSuccess ? Resources.Resources.Manage_ExternalLoginRemoved
+                : message == ManageMessageId.Error ? Resources.Resources.General_ErrorMessage
                 : "";
             var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
             if (user == null)
@@ -347,7 +347,7 @@ namespace LobbyManager.Controllers
         {
             foreach (var error in result.Errors)
             {
-                ModelState.AddModelError("", error);
+                ModelState.AddModelError("", (error.Contains("Incorrect password"))?Resources.Resources.Manage_IncorrectPassword:error);
             }
         }
 

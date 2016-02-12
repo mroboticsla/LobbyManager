@@ -28,14 +28,14 @@ namespace LobbyManager.Models
     public class SetPasswordViewModel
     {
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessageResourceName = "Error_Length", ErrorMessageResourceType = typeof(Resources.Resources), MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "New password")]
+        [Display(Name = "Manage_NewPassword", ResourceType = typeof(Resources.Resources))]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Display(Name = "Manage_ConfirmNewPassword", ResourceType = typeof(Resources.Resources))]
+        [Compare("NewPassword", ErrorMessageResourceName = "Error_PasswordMatch", ErrorMessageResourceType = typeof(Resources.Resources))]
         public string ConfirmPassword { get; set; }
     }
 
@@ -43,18 +43,18 @@ namespace LobbyManager.Models
     {
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Current password")]
+        [Display(Name = "Manage_CurrentPassword", ResourceType = typeof(Resources.Resources))]
         public string OldPassword { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessageResourceName = "Error_Length", ErrorMessageResourceType = typeof(Resources.Resources), MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "New password")]
+        [Display(Name = "Manage_NewPassword", ResourceType = typeof(Resources.Resources))]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Display(Name = "Manage_ConfirmNewPassword", ResourceType = typeof(Resources.Resources))]
+        [Compare("NewPassword", ErrorMessageResourceName = "Error_PasswordMatch", ErrorMessageResourceType = typeof(Resources.Resources))]
         public string ConfirmPassword { get; set; }
     }
 
@@ -62,19 +62,19 @@ namespace LobbyManager.Models
     {
         [Required]
         [Phone]
-        [Display(Name = "Phone Number")]
+        [Display(Name = "Manage_PhoneNumber", ResourceType = typeof(Resources.Resources))]
         public string Number { get; set; }
     }
 
     public class VerifyPhoneNumberViewModel
     {
         [Required]
-        [Display(Name = "Code")]
+        [Display(Name = "General_Code", ResourceType = typeof(Resources.Resources))]
         public string Code { get; set; }
 
         [Required]
         [Phone]
-        [Display(Name = "Phone Number")]
+        [Display(Name = "Manage_PhoneNumber", ResourceType = typeof(Resources.Resources))]
         public string PhoneNumber { get; set; }
     }
 
