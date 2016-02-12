@@ -123,7 +123,7 @@ namespace LobbyManager.Controllers
                 var message = new IdentityMessage
                 {
                     Destination = model.Number,
-                    Body = "Your security code is: " + code
+                    Body = String.Format(Resources.Resources.Manage_YourPhoneSecurityCodeIs,code)
                 };
                 await UserManager.SmsService.SendAsync(message);
             }

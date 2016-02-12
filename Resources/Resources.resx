@@ -323,4 +323,91 @@
   <data name="Register_Title" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="General_Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="General_Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="General_Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="General_Manage" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="General_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Manage_AddPhoneNumber" xml:space="preserve">
+    <value>Add a phone number</value>
+  </data>
+  <data name="Manage_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Manage_ChangePasswordButton" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Manage_ChangePasswordForm" xml:space="preserve">
+    <value>Change Password Form</value>
+  </data>
+  <data name="Manage_ChangeYourAccountSettings" xml:space="preserve">
+    <value>Change your account settings</value>
+  </data>
+  <data name="Manage_CreateLocalLogin" xml:space="preserve">
+    <value>Create Local Login</value>
+  </data>
+  <data name="Manage_CreatePassword" xml:space="preserve">
+    <value>Create Password</value>
+  </data>
+  <data name="Manage_EmailCode" xml:space="preserve">
+    <value>Email Code</value>
+  </data>
+  <data name="Manage_EnterVerificationCode" xml:space="preserve">
+    <value>Enter verification code</value>
+  </data>
+  <data name="Manage_ExternalLogins" xml:space="preserve">
+    <value>External Logins</value>
+  </data>
+  <data name="Manage_LoginUsingAuthAccount" xml:space="preserve">
+    <value>Log in using your {0} account</value>
+  </data>
+  <data name="Manage_ManageExternalLogins" xml:space="preserve">
+    <value>Manage your external logins</value>
+  </data>
+  <data name="Manage_NoExternalAuthServicesConfigured" xml:space="preserve">
+    <value>There are no external authentication services configured.</value>
+  </data>
+  <data name="Manage_NoLocalAccountMessage" xml:space="preserve">
+    <value>You do not have a local username/password for this site. Add a local account so you can log in without an external login.</value>
+  </data>
+  <data name="Manage_PhoneCode" xml:space="preserve">
+    <value>Phone Code</value>
+  </data>
+  <data name="Manage_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Manage_RegisteredLogins" xml:space="preserve">
+    <value>Registered Logins</value>
+  </data>
+  <data name="Manage_RemoveAuthProviderFromAccount" xml:space="preserve">
+    <value>Remove this {0} login from your account</value>
+  </data>
+  <data name="Manage_SecurityCodeEmailSubject" xml:space="preserve">
+    <value>Security Code - LobbyManager®</value>
+  </data>
+  <data name="Manage_SetPassword" xml:space="preserve">
+    <value>Set password</value>
+  </data>
+  <data name="Manage_TwoFactorAuth" xml:space="preserve">
+    <value>Two-Factor Authentication</value>
+  </data>
+  <data name="Manage_VerifyPhoneNumber" xml:space="preserve">
+    <value>Verify Phone Number</value>
+  </data>
+  <data name="Manage_YourEmailSecurityCodeIs" xml:space="preserve">
+    <value>Your security code is: {0}</value>
+  </data>
+  <data name="Manage_YourPhoneSecurityCodeIs" xml:space="preserve">
+    <value>Your security code is: {0}</value>
+  </data>
 </root>

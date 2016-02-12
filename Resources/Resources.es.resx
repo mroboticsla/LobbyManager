@@ -317,4 +317,91 @@
   <data name="Register_Title" xml:space="preserve">
     <value>Registrar</value>
   </data>
+  <data name="General_Change" xml:space="preserve">
+    <value>Cambiar</value>
+  </data>
+  <data name="General_Disable" xml:space="preserve">
+    <value>Deshabilitar</value>
+  </data>
+  <data name="General_Enable" xml:space="preserve">
+    <value>Habilitar</value>
+  </data>
+  <data name="General_Manage" xml:space="preserve">
+    <value>Administrar</value>
+  </data>
+  <data name="General_Remove" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="Manage_AddPhoneNumber" xml:space="preserve">
+    <value>Agregar un número telefónico</value>
+  </data>
+  <data name="Manage_ChangePassword" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="Manage_ChangePasswordButton" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="Manage_ChangePasswordForm" xml:space="preserve">
+    <value>Formulario para cambio de contraseña</value>
+  </data>
+  <data name="Manage_ChangeYourAccountSettings" xml:space="preserve">
+    <value>Cambiar la configuración de la cuenta</value>
+  </data>
+  <data name="Manage_CreateLocalLogin" xml:space="preserve">
+    <value>Crear inicio de sesión local</value>
+  </data>
+  <data name="Manage_CreatePassword" xml:space="preserve">
+    <value>Crear contraseña</value>
+  </data>
+  <data name="Manage_EmailCode" xml:space="preserve">
+    <value>Código por Correo Electrónico</value>
+  </data>
+  <data name="Manage_EnterVerificationCode" xml:space="preserve">
+    <value>Ingrese su código de verificación</value>
+  </data>
+  <data name="Manage_ExternalLogins" xml:space="preserve">
+    <value>Cuentas externas</value>
+  </data>
+  <data name="Manage_LoginUsingAuthAccount" xml:space="preserve">
+    <value>Iniciar sesión con su cuenta {0}</value>
+  </data>
+  <data name="Manage_ManageExternalLogins" xml:space="preserve">
+    <value>Administrar cuentas externas</value>
+  </data>
+  <data name="Manage_NoExternalAuthServicesConfigured" xml:space="preserve">
+    <value>No se ha configurado el acceso con ningún proveedor de autenticación externo.</value>
+  </data>
+  <data name="Manage_NoLocalAccountMessage" xml:space="preserve">
+    <value>No se ha configurado ningún usuario o contraseña local para acceder a su sesión. Agregue una cuenta local para iniciar sesión sin utilizar proveedores externos de autenticación.</value>
+  </data>
+  <data name="Manage_PhoneCode" xml:space="preserve">
+    <value>Código por SMS</value>
+  </data>
+  <data name="Manage_PhoneNumber" xml:space="preserve">
+    <value>Número telefónico</value>
+  </data>
+  <data name="Manage_RegisteredLogins" xml:space="preserve">
+    <value>Cuentas registradas</value>
+  </data>
+  <data name="Manage_RemoveAuthProviderFromAccount" xml:space="preserve">
+    <value>Remover el inicio de sesión {0} de su cuenta</value>
+  </data>
+  <data name="Manage_SecurityCodeEmailSubject" xml:space="preserve">
+    <value>Código de Seguridad - LobbyManager®</value>
+  </data>
+  <data name="Manage_SetPassword" xml:space="preserve">
+    <value>Establecer contraseña</value>
+  </data>
+  <data name="Manage_TwoFactorAuth" xml:space="preserve">
+    <value>Autenticación de Dos Pasos</value>
+  </data>
+  <data name="Manage_VerifyPhoneNumber" xml:space="preserve">
+    <value>Verificar número telefónico</value>
+  </data>
+  <data name="Manage_YourEmailSecurityCodeIs" xml:space="preserve">
+    <value>Su código de seguridad es: {0}</value>
+  </data>
+  <data name="Manage_YourPhoneSecurityCodeIs" xml:space="preserve">
+    <value>Su código de seguridad es: {0}</value>
+  </data>
 </root>

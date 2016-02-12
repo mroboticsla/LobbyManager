@@ -27,17 +27,36 @@ namespace LobbyManager
             await configSendGridasync(message);
         }
 
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
+        }
+
+        public static string Base64Decode(string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        }
+
         private async Task configSendGridasync(IdentityMessage message)
         {
             var myMessage = new SendGridMessage();
             myMessage.AddTo(message.Destination);
             myMessage.From = new System.Net.Mail.MailAddress(
-                                "admin@mroboticsla.com", Resources.Resources.General_VendorName);
+                                Reverse(Base64Decode(ConfigurationManager.AppSettings["MRoboticsNotifierAddress"])), Resources.Resources.General_VendorName);
             myMessage.Subject = message.Subject;
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
 
-            var transportWeb = new Web(ConfigurationManager.AppSettings["MRoboticsAPI"]);
+            var transportWeb = new Web(Reverse(Base64Decode(ConfigurationManager.AppSettings["MRoboticsAPI"])));
 
             // Send the email.
             if (transportWeb != null)
@@ -54,6 +73,25 @@ namespace LobbyManager
 
     public class SmsService : IIdentityMessageService
     {
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
+        }
+
+        public static string Base64Decode(string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        }
+        
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your SMS service here to send a text message.
@@ -61,10 +99,10 @@ namespace LobbyManager
 
             // Twilio Begin
              var Twilio = new TwilioRestClient(
-               System.Configuration.ConfigurationManager.AppSettings["SMSAccountIdentification"],
-               System.Configuration.ConfigurationManager.AppSettings["SMSAccountPassword"]);
+               Reverse(Base64Decode(ConfigurationManager.AppSettings["MRoboticsSMSAccount"])),
+               Reverse(Base64Decode(ConfigurationManager.AppSettings["MRoboticsSMSAccountPhrase"])));
              var result = Twilio.SendMessage(
-               System.Configuration.ConfigurationManager.AppSettings["SMSAccountFrom"],
+               Reverse(Base64Decode(System.Configuration.ConfigurationManager.AppSettings["MRoboticsSMSAccountDelegate"])),
                message.Destination, message.Body
              );
 
@@ -111,14 +149,14 @@ namespace LobbyManager
 
             // Register two factor authentication providers. This application uses Phone and Emails as a step of receiving a code for verifying the user
             // You can write your own provider and plug it in here.
-            manager.RegisterTwoFactorProvider("Phone Code", new PhoneNumberTokenProvider<ApplicationUser>
+            manager.RegisterTwoFactorProvider(Resources.Resources.Manage_PhoneCode, new PhoneNumberTokenProvider<ApplicationUser>
             {
-                MessageFormat = "Your security code is {0}"
+                MessageFormat = Resources.Resources.Manage_YourPhoneSecurityCodeIs
             });
-            manager.RegisterTwoFactorProvider("Email Code", new EmailTokenProvider<ApplicationUser>
+            manager.RegisterTwoFactorProvider(Resources.Resources.Manage_YourEmailSecurityCodeIs, new EmailTokenProvider<ApplicationUser>
             {
-                Subject = "Security Code",
-                BodyFormat = "Your security code is {0}"
+                Subject = Resources.Resources.Manage_SecurityCodeEmailSubject,
+                BodyFormat = Resources.Resources.Manage_YourEmailSecurityCodeIs + Resources.Resources.General_EmailSignature
             });
             manager.EmailService = new EmailService();
             manager.SmsService = new SmsService();

@@ -412,6 +412,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change.
+        /// </summary>
+        public static string General_Change {
+            get {
+                return ResourceManager.GetString("General_Change", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Code.
         /// </summary>
         public static string General_Code {
@@ -426,6 +435,15 @@ namespace Resources {
         public static string General_ConfirmPassword {
             get {
                 return ResourceManager.GetString("General_ConfirmPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable.
+        /// </summary>
+        public static string General_Disable {
+            get {
+                return ResourceManager.GetString("General_Disable", resourceCulture);
             }
         }
         
@@ -449,6 +467,15 @@ namespace Resources {
         public static string General_EmailSignature {
             get {
                 return ResourceManager.GetString("General_EmailSignature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable.
+        /// </summary>
+        public static string General_Enable {
+            get {
+                return ResourceManager.GetString("General_Enable", resourceCulture);
             }
         }
         
@@ -480,11 +507,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage.
+        /// </summary>
+        public static string General_Manage {
+            get {
+                return ResourceManager.GetString("General_Manage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string General_Password {
             get {
                 return ResourceManager.GetString("General_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove.
+        /// </summary>
+        public static string General_Remove {
+            get {
+                return ResourceManager.GetString("General_Remove", resourceCulture);
             }
         }
         
@@ -611,6 +656,222 @@ namespace Resources {
         public static string MainMenu_Home {
             get {
                 return ResourceManager.GetString("MainMenu_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a phone number.
+        /// </summary>
+        public static string Manage_AddPhoneNumber {
+            get {
+                return ResourceManager.GetString("Manage_AddPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Password.
+        /// </summary>
+        public static string Manage_ChangePassword {
+            get {
+                return ResourceManager.GetString("Manage_ChangePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change password.
+        /// </summary>
+        public static string Manage_ChangePasswordButton {
+            get {
+                return ResourceManager.GetString("Manage_ChangePasswordButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Password Form.
+        /// </summary>
+        public static string Manage_ChangePasswordForm {
+            get {
+                return ResourceManager.GetString("Manage_ChangePasswordForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change your account settings.
+        /// </summary>
+        public static string Manage_ChangeYourAccountSettings {
+            get {
+                return ResourceManager.GetString("Manage_ChangeYourAccountSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Local Login.
+        /// </summary>
+        public static string Manage_CreateLocalLogin {
+            get {
+                return ResourceManager.GetString("Manage_CreateLocalLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Password.
+        /// </summary>
+        public static string Manage_CreatePassword {
+            get {
+                return ResourceManager.GetString("Manage_CreatePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email Code.
+        /// </summary>
+        public static string Manage_EmailCode {
+            get {
+                return ResourceManager.GetString("Manage_EmailCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter verification code.
+        /// </summary>
+        public static string Manage_EnterVerificationCode {
+            get {
+                return ResourceManager.GetString("Manage_EnterVerificationCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to External Logins.
+        /// </summary>
+        public static string Manage_ExternalLogins {
+            get {
+                return ResourceManager.GetString("Manage_ExternalLogins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log in using your {0} account.
+        /// </summary>
+        public static string Manage_LoginUsingAuthAccount {
+            get {
+                return ResourceManager.GetString("Manage_LoginUsingAuthAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage your external logins.
+        /// </summary>
+        public static string Manage_ManageExternalLogins {
+            get {
+                return ResourceManager.GetString("Manage_ManageExternalLogins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are no external authentication services configured..
+        /// </summary>
+        public static string Manage_NoExternalAuthServicesConfigured {
+            get {
+                return ResourceManager.GetString("Manage_NoExternalAuthServicesConfigured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You do not have a local username/password for this site. Add a local account so you can log in without an external login..
+        /// </summary>
+        public static string Manage_NoLocalAccountMessage {
+            get {
+                return ResourceManager.GetString("Manage_NoLocalAccountMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Code.
+        /// </summary>
+        public static string Manage_PhoneCode {
+            get {
+                return ResourceManager.GetString("Manage_PhoneCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        public static string Manage_PhoneNumber {
+            get {
+                return ResourceManager.GetString("Manage_PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registered Logins.
+        /// </summary>
+        public static string Manage_RegisteredLogins {
+            get {
+                return ResourceManager.GetString("Manage_RegisteredLogins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove this {0} login from your account.
+        /// </summary>
+        public static string Manage_RemoveAuthProviderFromAccount {
+            get {
+                return ResourceManager.GetString("Manage_RemoveAuthProviderFromAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security Code - LobbyManager®.
+        /// </summary>
+        public static string Manage_SecurityCodeEmailSubject {
+            get {
+                return ResourceManager.GetString("Manage_SecurityCodeEmailSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set password.
+        /// </summary>
+        public static string Manage_SetPassword {
+            get {
+                return ResourceManager.GetString("Manage_SetPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Two-Factor Authentication.
+        /// </summary>
+        public static string Manage_TwoFactorAuth {
+            get {
+                return ResourceManager.GetString("Manage_TwoFactorAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify Phone Number.
+        /// </summary>
+        public static string Manage_VerifyPhoneNumber {
+            get {
+                return ResourceManager.GetString("Manage_VerifyPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your security code is: {0}.
+        /// </summary>
+        public static string Manage_YourEmailSecurityCodeIs {
+            get {
+                return ResourceManager.GetString("Manage_YourEmailSecurityCodeIs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your security code is: {0}.
+        /// </summary>
+        public static string Manage_YourPhoneSecurityCodeIs {
+            get {
+                return ResourceManager.GetString("Manage_YourPhoneSecurityCodeIs", resourceCulture);
             }
         }
         
