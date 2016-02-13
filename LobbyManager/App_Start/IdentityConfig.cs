@@ -38,7 +38,7 @@ namespace LobbyManager
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
 
-            var transportWeb = new Web(ConfigKey.Decode(ConfigurationManager.AppSettings["MRoboticsAPI"]));
+            var transportWeb = new Web(ConfigKey.Decode(Environment.GetEnvironmentVariable(ConfigurationManager.AppSettings["MRoboticsAPI"])));
 
             // Send the email.
             if (transportWeb != null)
