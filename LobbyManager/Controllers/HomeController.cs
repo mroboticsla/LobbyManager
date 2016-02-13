@@ -9,7 +9,7 @@ namespace LobbyManager.Controllers
 {
     public class HomeController : BaseController
     {
-        [AllowAnonymous]
+        [AllowAnonymous, RequireHttps]
         public ActionResult Index()
         {
             if (Request.IsAuthenticated)

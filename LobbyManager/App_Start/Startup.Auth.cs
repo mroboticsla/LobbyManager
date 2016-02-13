@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using LobbyManager.Models;
+using LobbyManager.Controllers;
+using System.Configuration;
 
 namespace LobbyManager
 {
@@ -58,11 +60,11 @@ namespace LobbyManager
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = ConfigKey.Decode(ConfigurationManager.AppSettings["GoogleOAuth"]),
+                ClientSecret = ConfigKey.Decode(ConfigurationManager.AppSettings["GooglePhrase"])
+            });
         }
     }
 }

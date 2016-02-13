@@ -1,0 +1,9 @@
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\bin\Debug\ConfigStringEncoder.exe.config
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\bin\Debug\ConfigStringEncoder.exe
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\bin\Debug\ConfigStringEncoder.pdb
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.csprojResolveAssemblyReference.cache
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.frm_main.resources
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.Properties.Resources.resources
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.csproj.GenerateResource.Cache
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.exe
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\ConfigStringEncoder\obj\Debug\ConfigStringEncoder.pdb
