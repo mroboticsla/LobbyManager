@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 
@@ -34,6 +35,48 @@ namespace LobbyManager.Controllers
         public static String Decode(String key)
         {
             return Reverse(Base64Decode(key));
+        }
+
+        public static String DecodeEnvironmentVariable(String variable)
+        {
+            String result = "";
+            try
+            {
+                result = Decode(Environment.GetEnvironmentVariable(variable));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return result;
+        }
+
+        public static String DecodeConfigEnvironmentVariable(String variable)
+        {
+            String result = "";
+            try
+            {
+                result = Decode(Environment.GetEnvironmentVariable(ConfigurationManager.AppSettings[variable]));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return result;
+        }
+
+        public static String DecodeConfigVariable(String variable)
+        {
+            String result = "";
+            try
+            {
+                result = Decode(ConfigurationManager.AppSettings[variable]);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return result;
         }
     }
 }

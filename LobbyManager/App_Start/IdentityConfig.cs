@@ -18,6 +18,7 @@ using System.Configuration;
 using System.Diagnostics;
 using Twilio;
 using LobbyManager.Controllers;
+using LobbyManager.App_Start;
 
 namespace LobbyManager
 {
@@ -33,12 +34,12 @@ namespace LobbyManager
             var myMessage = new SendGridMessage();
             myMessage.AddTo(message.Destination);
             myMessage.From = new System.Net.Mail.MailAddress(
-                                ConfigKey.Decode(ConfigurationManager.AppSettings["MRoboticsNotifierAddress"]), Resources.Resources.General_VendorName);
+                                API_Variables.EmailAddress, Resources.Resources.General_VendorName);
             myMessage.Subject = message.Subject;
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
 
-            var transportWeb = new Web(ConfigKey.Decode(Environment.GetEnvironmentVariable(ConfigurationManager.AppSettings["MRoboticsAPI"])));
+            var transportWeb = new Web(API_Variables.Sendgrid_API);
 
             // Send the email.
             if (transportWeb != null)
@@ -62,10 +63,10 @@ namespace LobbyManager
 
             // Twilio Begin
              var Twilio = new TwilioRestClient(
-               ConfigKey.Decode(ConfigurationManager.AppSettings["MRoboticsSMSAccount"]),
-               ConfigKey.Decode(ConfigurationManager.AppSettings["MRoboticsSMSAccountPhrase"]));
+               API_Variables.SMS_API,
+               API_Variables.SMS_Phrase);
              var result = Twilio.SendMessage(
-               ConfigKey.Decode(System.Configuration.ConfigurationManager.AppSettings["MRoboticsSMSAccountDelegate"]),
+               API_Variables.SMS_Number,
                message.Destination, message.Body
              );
 

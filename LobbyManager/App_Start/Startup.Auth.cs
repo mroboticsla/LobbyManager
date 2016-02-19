@@ -8,6 +8,7 @@ using Owin;
 using LobbyManager.Models;
 using LobbyManager.Controllers;
 using System.Configuration;
+using LobbyManager.App_Start;
 
 namespace LobbyManager
 {
@@ -56,14 +57,14 @@ namespace LobbyManager
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: API_Variables.FacebookOAuth,
+               appSecret: API_Variables.FacebookPhrase);
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = ConfigKey.Decode(ConfigurationManager.AppSettings["GoogleOAuth"]),
-                ClientSecret = ConfigKey.Decode(ConfigurationManager.AppSettings["GooglePhrase"])
+                ClientId = API_Variables.GoogleOAuth,
+                ClientSecret = API_Variables.GooglePhrase
             });
         }
     }
