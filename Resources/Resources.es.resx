@@ -452,4 +452,16 @@
   <data name="Manage_YourPasswordHasBeenSet" xml:space="preserve">
     <value>Se ha establecido su contraseña.</value>
   </data>
+  <data name="General_Lastname" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="General_Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Account_AssociationForm" xml:space="preserve">
+    <value>Confirmación de Registro</value>
+  </data>
+  <data name="General_ProfileImage" xml:space="preserve">
+    <value>Imagen de Perfil</value>
+  </data>
 </root>

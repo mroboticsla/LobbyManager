@@ -1,16 +1,22 @@
 ﻿@using Microsoft.AspNet.Identity
+@using LobbyManager.Models
+@using Microsoft.AspNet.Identity.EntityFramework
 @if (Request.IsAuthenticated)
 {
+    var store = new UserStore<ApplicationUser>(new ApplicationDbContext());
+    var userManager = new UserManager<ApplicationUser>(store);
+    ApplicationUser user = userManager.FindByIdAsync(User.Identity.GetUserId()).Result;
+
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink(Resources.General_WelcomeLabel + " " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">@Resources.Account_Logoff</a></li>
-    </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink(Resources.General_WelcomeLabel + " " + user.Name + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = Resources.General_Manage })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">@Resources.Account_Logoff</a></li>
+        </ul>
     }
 }
 else

@@ -452,4 +452,16 @@
   <data name="Manage_YourPasswordHasBeenSet" xml:space="preserve">
     <value>Your password has been set.</value>
   </data>
+  <data name="General_Lastname" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="General_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Account_AssociationForm" xml:space="preserve">
+    <value>Association Form</value>
+  </data>
+  <data name="General_ProfileImage" xml:space="preserve">
+    <value>Profile Image</value>
+  </data>
 </root>

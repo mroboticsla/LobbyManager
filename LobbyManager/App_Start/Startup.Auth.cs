@@ -9,6 +9,8 @@ using LobbyManager.Models;
 using LobbyManager.Controllers;
 using System.Configuration;
 using LobbyManager.App_Start;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace LobbyManager
 {
@@ -64,7 +66,17 @@ namespace LobbyManager
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
                 ClientId = API_Variables.GoogleOAuth,
-                ClientSecret = API_Variables.GooglePhrase
+                ClientSecret = API_Variables.GooglePhrase,
+                Provider = new GoogleOAuth2AuthenticationProvider()
+                {
+                    OnAuthenticated = context =>
+                    {
+                        context.Identity.AddClaim(new Claim("picture", context.User.GetValue("image").ToString()));
+                        context.Identity.AddClaim(new Claim("name", context.User.GetValue("name").ToString()));
+
+                        return Task.FromResult(0);
+                    }
+                }
             });
         }
     }

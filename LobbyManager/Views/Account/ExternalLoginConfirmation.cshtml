@@ -9,12 +9,33 @@
 {
     @Html.AntiForgeryToken()
 
-    <h4>Association Form</h4>
+    <h4>@Resources.Account_AssociationForm</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <p class="text-info">
-        @Html.Raw(String.Format(Resources.Account_SuccessfullAuthMessage, ViewBag.LoginProvider, Resources.Register_RegisterButton))
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <img class="img-responsive pull-right" src="@Model.ProfileImage" style="width:50px;" alt="@Model.Name">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10">
+                @Html.Raw(String.Format(Resources.Account_SuccessfullAuthMessage, ViewBag.LoginProvider, Resources.Register_RegisterButton))
+            </div>
+        </div>
     </p>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Lastname, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Lastname, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Lastname)
+        </div>
+    </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">

@@ -233,3 +233,5 @@ C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\Lobb
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\bin\RestSharp.xml
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\bin\Twilio.Api.pdb
 C:\Users\Mauricio\Documents\M-Robotics\Proyectos\M-Robotics Development\Git\LobbyManager\LobbyManager\bin\Twilio.Api.xml
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.Migrations.Init.resources
+C:\Users\desarrollo03\Documents\Visual Studio 2013\Projects\LobbyManagerMVC5\Git\LobbyManager\LobbyManager\obj\Debug\LobbyManager.csproj.GenerateResource.Cache

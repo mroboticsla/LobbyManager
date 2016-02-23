@@ -17,6 +17,14 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
+
+    <style type="text/css">
+        .navbar-text img {
+          max-height:30px;
+          width:auto;
+          vertical-align:middle;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -31,6 +39,9 @@
             </div>
             @if (Request.IsAuthenticated)
             {
+                string ExternalLoginProvider = System.Web.HttpContext.Current.Session["ExternalLoginProvider"] as String;
+                string ProfileImageUrl = System.Web.HttpContext.Current.Session["ProfileImageUrl"] as String;
+                
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink(Resources.MainMenu_Home, "Index", "Home")</li>
@@ -39,6 +50,12 @@
                     </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
+                if (ExternalLoginProvider.Equals("Google", StringComparison.OrdinalIgnoreCase))
+                {
+                    <div class="pull-right navbar-text">
+                        <img class="img-responsive" src="@ProfileImageUrl" style="max-height:30px;" alt="@User.Identity.Name" />
+                    </div>
+                }
             }
         </div>
     </div>

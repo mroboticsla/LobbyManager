@@ -10,6 +10,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using LobbyManager.Models;
 using LobbyManager.Helper;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 namespace LobbyManager.Controllers
 {
@@ -366,9 +368,22 @@ namespace LobbyManager.Controllers
 
             // Sign in the user with this external login provider if the user already has a login
             var result = await SignInManager.ExternalSignInAsync(loginInfo, isPersistent: false);
+            String ExternalLoginProvider = loginInfo.Login.LoginProvider;
+            var pictureUrl = "";
             switch (result)
             {
                 case SignInStatus.Success:
+                    if (ExternalLoginProvider.Equals("Google", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var externalIdentity = HttpContext.GetOwinContext().Authentication.GetExternalIdentityAsync(DefaultAuthenticationTypes.ExternalCookie);
+                        var pictureClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("picture"));
+                        var nameClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("name"));
+
+                        JObject imageClaim = JObject.Parse(pictureClaim.Value);
+                        pictureUrl = imageClaim.GetValue("url").ToString();
+                    }
+                    System.Web.HttpContext.Current.Session["ExternalLoginProvider"] = ExternalLoginProvider;
+                    System.Web.HttpContext.Current.Session["ProfileImageUrl"] = pictureUrl;
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -378,8 +393,38 @@ namespace LobbyManager.Controllers
                 default:
                     // If the user does not have an account, then prompt the user to create an account
                     ViewBag.ReturnUrl = returnUrl;
-                    ViewBag.LoginProvider = loginInfo.Login.LoginProvider;
-                    return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = loginInfo.Email });
+                    ViewBag.LoginProvider = ExternalLoginProvider;
+                    if (ExternalLoginProvider.Equals("Google", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var externalIdentity = HttpContext.GetOwinContext().Authentication.GetExternalIdentityAsync(DefaultAuthenticationTypes.ExternalCookie);
+                        var pictureClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("picture"));
+                        var nameClaim = externalIdentity.Result.Claims.FirstOrDefault(c => c.Type.Equals("name"));
+
+                        JObject imageClaim = JObject.Parse(pictureClaim.Value);
+                        pictureUrl = imageClaim.GetValue("url").ToString();
+
+                        JObject nameData = JObject.Parse(nameClaim.Value);
+                        var firstName = nameData.GetValue("givenName");
+                        var lastname = nameData.GetValue("familyName");
+                     
+                        return View("ExternalLoginConfirmation",
+                            new ExternalLoginConfirmationViewModel
+                            {
+                                ProfileImage = (pictureUrl != null)?pictureUrl.ToString():"",
+                                Name = (firstName != null) ? firstName.ToString() : "",
+                                Lastname = (lastname != null) ? lastname.ToString() : "",
+                                Email = loginInfo.Email
+                            });
+                    }
+                    else
+                    {
+                        return View("ExternalLoginConfirmation",
+                            new ExternalLoginConfirmationViewModel
+                            {
+                                Email = loginInfo.Email
+                            });
+                    }
+                        
             }
         }
 
@@ -403,7 +448,12 @@ namespace LobbyManager.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { 
+                    UserName = model.Email,
+                    Email = model.Email, 
+                    Name = model.Name,
+                    Lastname = model.Lastname
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

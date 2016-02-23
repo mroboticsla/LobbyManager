@@ -8,6 +8,17 @@ namespace LobbyManager.Models
         [Required]
         [Display(Name = "General_Email", ResourceType = typeof(Resources.Resources))]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "General_Name", ResourceType = typeof(Resources.Resources))]
+        public string Name { get; set; }
+
+        [Required]
+        [Display(Name = "General_Lastname", ResourceType = typeof(Resources.Resources))]
+        public string Lastname { get; set; }
+
+        [Display(Name = "General_ProfileImage", ResourceType = typeof(Resources.Resources))]
+        public string ProfileImage { get; set; }
     }
 
     public class ExternalLoginListViewModel
